@@ -198,9 +198,9 @@ uv run connector start --app unitelabs.raspberrypi_connector:create_app
 
 1. Download the [SiLA Browser](https://gitlab.com/unitelabs/sila2/sila-browser/#stable-releases).
 
+2. Select the raspberrypi-connector.
 ![SiLA Browser Home](./assets/sila_browser_home.png)
 
-2. Select the raspberrypi-connector.
 
 By default this already has some default features. For example the `SiLAService` feature through which the server info can be retrieved.
 
@@ -217,7 +217,7 @@ This file defines the API that the SiLA connector will expose. The Raspberry PI 
 
 
 +class RaspberryPiController(sila.Feature):
-+    """Controller for the Raspberry PI"""
++    """Controller for the Raspberry PI."""
 
 +    # Inject the Raspberry PI protocol 
 +    def __init__(self, protocol: RaspberrypiConnectorProtocol):
@@ -282,13 +282,13 @@ class RaspberrypiConnectorProtocol(Protocol):
         super().__init__(create_tcp_connection, **kwargs)
 
 +    async def is_led_on(self) -> bool:
++        """Check whether the LED is currently switched on."""
 +        command = HTTPCommand(path="/led")
 +        response: HTTPResponse = await self.execute(command)
 +        if not response.payload:
 +            raise Exception
 +        state = json.loads(response.payload)
-+        is_on = bool(state["state"])
-+        return is_on
++        return bool(state["state"])
 ```
 
 2. Add unobservable property to `src\unitelabs\raspberrypi_connector\features\raspberry_controller\raspberry_controller.py`:
@@ -299,7 +299,7 @@ Because all the logic is handled in the protocol the property only has to call a
 ...
 
 class RaspberryPiController(sila.Feature):
-    """Controller for the Raspberry PI"""
+    """Controller for the Raspberry PI."""
 
     # Inject the Raspberry PI protocol 
     def __init__(self, protocol: RaspberrypiConnectorProtocol):
@@ -314,10 +314,15 @@ class RaspberryPiController(sila.Feature):
 +    @sila.UnobservableProperty(name="Is LED on", identifier="IsLedOn")
 +    async def open_method(self) -> bool:
 +        """
-+        Checks if LED is on or off.
++        Check if LED is on or off.
 +
 +        Returns:
 +            ledOn: True if LED is on, false otherwise
++
 +        """
 +        return await self._protocol.is_led_on()
 ```
+
+## Implement Set LED Logic
+
+1. Add `set_led_state` function to the `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py`:
