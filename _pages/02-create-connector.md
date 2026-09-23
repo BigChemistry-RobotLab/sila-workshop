@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 2. Create SiLA Connector
-permalink: /create-sila-connector/
+permalink: /workshop/create-sila-connector/
+parent: Workshop
 ---
 
 # Create SiLA Connector

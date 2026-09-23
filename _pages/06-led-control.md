@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 6. LED Control Logic
-permalink: /led-control/
+permalink: /workshop/led-control/
+parent: Workshop
 ---
 
 

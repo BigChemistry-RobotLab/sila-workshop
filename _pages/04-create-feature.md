@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 4. Create and Register Feature
-permalink: /create-feature/
+permalink: /workshop/create-feature/
+parent: Workshop
 ---
 
 # Create a New Feature

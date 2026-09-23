@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 3. Connecting to the Raspberry Pi
-permalink: /connect-raspberry-pi/
+permalink: /workshop/connect-raspberry-pi/
+parent: Workshop
 ---
 
 # Connect Connector to Raspberry PI

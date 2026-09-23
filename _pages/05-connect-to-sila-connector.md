@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 5. Controlling the SiLA Connector
-permalink: /connect-to-sila-connector/
+permalink: /workshop/connect-to-sila-connector/
+parent: Workshop
 ---
 
 # Control the Connector
@@ -10,7 +11,7 @@ permalink: /connect-to-sila-connector/
 
 ## 2. Select the raspberrypi-connector.
 
-![SiLA Browser Home](../assets/images/sila_browser_home.png)
+![SiLA Browser Home](/assets/images/sila_browser_home.png)
 
 
 By default this already has some default features. For example the `SiLAService` feature through which the server info can be retrieved.

@@ -1,12 +1,13 @@
 ---
 layout: default
 title: 1. The Instrument
-permalink: /instrument/
+permalink: /workshop/instrument/
+parent: Workshop
 ---
 
 # Raspberry PI Instrument
 
-![Wiring Diagram](../assets/images/circuit_image.png)
+![Wiring Diagram](/assets/images/circuit_image.png)
 
 The device is a Raspberry Pi 4 connected to:
 * An LED
