@@ -17,11 +17,3 @@
   color: #cb2431 !important;
   background-color: #ffeef0 !important;
 }
-
-// Make added/deleted spans occupy the available line width
-.language-diff .highlight span.gi,
-.language-diff .highlight span.gd {
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-}
