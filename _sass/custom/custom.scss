@@ -1,0 +1,27 @@
+// ============================================================
+// Diff code blocks
+// ============================================================
+
+.language-diff .highlight {
+  overflow-x: auto;
+}
+
+// Added lines
+.language-diff .highlight span.gi {
+  color: #22863a !important;
+  background-color: #f0fff4 !important;
+}
+
+// Deleted lines
+.language-diff .highlight span.gd {
+  color: #cb2431 !important;
+  background-color: #ffeef0 !important;
+}
+
+// Make added/deleted spans occupy the available line width
+.language-diff .highlight span.gi,
+.language-diff .highlight span.gd {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}

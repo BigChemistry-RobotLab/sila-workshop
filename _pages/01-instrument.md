@@ -1,6 +1,12 @@
-# The Device
+---
+layout: default
+title: 1. The Instrument
+permalink: /instrument/
+---
 
-![Wiring Diagram](../assets/circuit_image.png)
+# Raspberry PI Instrument
+
+![Wiring Diagram](../assets/images/circuit_image.png)
 
 The device is a Raspberry Pi 4 connected to:
 * An LED
@@ -29,11 +35,13 @@ curl http://raspberrypi.local:5000/led
 Response:
 
 ```json
-# 0 = off, 1 = on
 {
   "state": 0
 }
 ```
+
+- 0 = off
+- 1 = on
 
 ## Set LED state
 

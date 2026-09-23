@@ -1,6 +1,14 @@
-# Connecting the SiLA connector to the Raspberry PI
+---
+layout: default
+title: 3. Connecting to the Raspberry Pi
+permalink: /connect-raspberry-pi/
+---
 
-1. Open `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py` and remove setting the of the host and port. This is because these variables will be caried through the kwargs. These arguments are passed into the `create_tcp_connection` method, and the SiLA connector will handle all network configuration and handling in the background.
+# Connect Connector to Raspberry PI
+
+## 1. Open `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py` and remove setting the of the host and port. 
+
+This is because these variables will be caried through the kwargs. These arguments are passed into the `create_tcp_connection` method, and the SiLA connector will handle all network configuration and handling in the background.
 
 ```diff
 ...
@@ -14,7 +22,8 @@ class RaspberrypiConnectorProtocol(Protocol):
         super().__init__(create_tcp_connection, **kwargs)
 ```
 
-2. Open `src\unitelabs\raspberrypi_connector\__init__.py` and add host and port to the configuration.
+## 2. Open `src\unitelabs\raspberrypi_connector\__init__.py` and add host and port to the configuration.
+
 ```diff
 ...
 
@@ -57,12 +66,13 @@ async def create_app(config: RaspberrypiConnectorConfig) -> collections.abc.Asyn
     protocol.close()
 ```
 
-3. Generate config file. A file `config.json` will be created in the root of the project containing the new parameters and default values that were added in the `RaspberrypiConnectorConfig` class.
+## 3. Generate config file. A file `config.json` will be created in the root of the project containing the new parameters and default values that were added in the `RaspberrypiConnectorConfig` class.
+
 ```bash
 uv run config create --app unitelabs.raspberrypi_connector:create_app
 ```
 
-4. Start the connector:
+## 4. Start the connector:
 ```bash
 uv run connector start --app unitelabs.raspberrypi_connector:create_app
 ```

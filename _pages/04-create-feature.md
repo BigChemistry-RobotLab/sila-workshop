@@ -1,6 +1,12 @@
-# Create and Register new Feature
+---
+layout: default
+title: 4. Create and Register Feature
+permalink: /create-feature/
+---
 
-1. Add the file `src\unitelabs\raspberrypi_connector\features\raspberry_controller\raspberry_controller.py`.
+# Create a New Feature
+
+## 1. Add the file `src\unitelabs\raspberrypi_connector\features\raspberry_controller\raspberry_controller.py`.
 
 This file defines the API that the SiLA connector will expose. The Raspberry PI protocol is injected into this file. And some parameters are set through the `super.__init__()` function.
 
@@ -24,7 +30,7 @@ This file defines the API that the SiLA connector will expose. The Raspberry PI 
 +        self._protocol = protocol
 ```
 
-2. Register the feature in `src\unitelabs\raspberrypi_connector\__init__.py`:
+## 2. Register the feature in `src\unitelabs\raspberrypi_connector\__init__.py`:
 
 Register the feature in the app, so that it can automatically expose it as a feature.
 

@@ -1,8 +1,13 @@
-# Implement LED control Logic
+---
+layout: default
+title: 6. LED Control Logic
+permalink: /led-control/
+---
 
-## Get LED State Logic
 
-1. Add `is_led_on` function to the `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py`:
+# Get LED State Logic
+
+## 1. Add `is_led_on` function to the `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py`:
 
 This function first prepares a get request to be sent to the `/led`. Then reads the state from the payload in the response and converts the 0 or 1 into a boolean value True or False.
 
@@ -29,7 +34,7 @@ class RaspberrypiConnectorProtocol(Protocol):
 +        return bool(state["state"])
 ```
 
-2. Add unobservable property to `src\unitelabs\raspberrypi_connector\features\raspberry_controller\raspberry_controller.py`:
+## 2. Add unobservable property to `src\unitelabs\raspberrypi_connector\features\raspberry_controller\raspberry_controller.py`:
 
 Because all the logic is handled in the protocol the property only has to call and return its value. And describe the propertie's metadata, like the name, identifier, description and return value.
 
@@ -61,6 +66,6 @@ class RaspberryPiController(sila.Feature):
 +        return await self._protocol.is_led_on()
 ```
 
-## Turn LED on/off Logic
+# Turn LED on/off Logic
 
-1. Add `set_led_state` function to the `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py`:
+## 1. Add `set_led_state` function to the `src\unitelabs\raspberrypi_connector\io\raspberrypi_connector_protocol.py`:

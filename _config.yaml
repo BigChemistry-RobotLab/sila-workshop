@@ -1,0 +1,30 @@
+title: "SiLA Workshop"
+baseurl: ""
+host: 0.0.0.0
+port: 4000
+
+author:
+  name: "Big Chemistry"
+
+theme: just-the-docs
+
+logo: "/assets/images/logo.svg"
+
+minima:
+  skin: auto
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: default
+
+exclude:
+  - docker-compose.yml
+  - .gitignore
+  - README.md
+  - LICENCE
+  - server/*
