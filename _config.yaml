@@ -10,6 +10,8 @@ theme: just-the-docs
 
 logo: "/assets/images/logo.svg"
 
+nav_sort: case_sensitive
+
 minima:
   skin: auto
 

@@ -3,6 +3,7 @@ layout: default
 title: 3. Connecting to the Raspberry Pi
 permalink: /workshop/connect-raspberry-pi/
 parent: Workshop
+nav_order: 3
 ---
 
 # Connect Connector to Raspberry PI

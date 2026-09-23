@@ -3,6 +3,7 @@ layout: default
 title: 1. The Instrument
 permalink: /workshop/instrument/
 parent: Workshop
+nav_order: 1
 ---
 
 # Raspberry PI Instrument

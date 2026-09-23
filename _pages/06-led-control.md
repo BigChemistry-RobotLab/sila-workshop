@@ -3,6 +3,7 @@ layout: default
 title: 6. LED Control Logic
 permalink: /workshop/led-control/
 parent: Workshop
+nav_order: 6
 ---
 
 

@@ -17,3 +17,60 @@
   color: #cb2431 !important;
   background-color: #ffeef0 !important;
 }
+
+.page-nav {
+  margin-top: 50px;
+  padding-top: 25px;
+}
+
+.page-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page-nav-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid #d9dde3;
+  border-radius: 6px;
+  text-decoration: none !important;
+  color: #333;
+  min-width: 180px;
+}
+
+.page-nav-button:hover {
+  background-color: #f5f6f7;
+  text-decoration: none !important;
+}
+
+.page-nav-button.next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.page-nav-button span {
+  font-size: 24px;
+}
+
+.page-nav-button small {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.page-nav-button strong {
+  display: block;
+  font-size: 15px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .page-nav-button {
+    min-width: 0;
+    flex: 1;
+  }
+}

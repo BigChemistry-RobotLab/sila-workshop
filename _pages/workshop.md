@@ -2,6 +2,7 @@
 layout: default
 title: Workshop
 permalink: /workshop/
+nav_order: 0
 ---
 
 # SiLA Workshop

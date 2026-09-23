@@ -3,6 +3,7 @@ layout: default
 title: 5. Controlling the SiLA Connector
 permalink: /workshop/connect-to-sila-connector/
 parent: Workshop
+nav_order: 5
 ---
 
 # Control the Connector

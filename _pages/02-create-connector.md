@@ -3,6 +3,7 @@ layout: default
 title: 2. Create SiLA Connector
 permalink: /workshop/create-sila-connector/
 parent: Workshop
+nav_order: 2
 ---
 
 # Create SiLA Connector

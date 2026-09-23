@@ -3,6 +3,7 @@ layout: default
 title: 4. Create and Register Feature
 permalink: /workshop/create-feature/
 parent: Workshop
+nav_order: 4
 ---
 
 # Create a New Feature
