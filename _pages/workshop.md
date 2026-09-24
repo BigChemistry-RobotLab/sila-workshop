@@ -9,12 +9,11 @@ nav_order: 0
 
 ## Prerequisites
 
-- **Python 3.10+**: Ensure that Python 3.10 or later is installed. You can download Python from [python.org](https://www.python.org/).
-
-- **Git**: Ensure that Git is installed for version control. You can download Git from [git-scm.com](https://git-scm.com/).
-
-- **Cruft**: Ensure Cruft is installed.
-
-  ```bash
-  pip install cruft
-  ```
+> Before starting, make sure you have the following installed:
+>
+> * [Python](https://www.python.org/) 3.10 or newer
+> * [Git](https://git-scm.com/)
+> * [UV](https://docs.astral.sh/uv/)
+> * [Cruft](https://cruft.github.io/cruft/)
+>
+> If you are using UV, Cruft can also be executed directly with `uvx`, so a separate Cruft installation is not required.

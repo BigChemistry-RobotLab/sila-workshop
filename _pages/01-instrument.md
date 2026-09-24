@@ -34,16 +34,13 @@ The Raspberry Pi runs an HTTP server on port `5000`.
 curl http://raspberrypi.local:5000/led
 ```
 
-Response:
+Response (0=off, 1=on):
 
 ```json
 {
   "state": 0
 }
 ```
-
-- 0 = off
-- 1 = on
 
 ## Set LED state
 
