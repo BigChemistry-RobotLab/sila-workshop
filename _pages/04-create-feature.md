@@ -2,7 +2,7 @@
 layout: default
 title: 4. Create and Register Feature
 permalink: /workshop/create-feature/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 4
 ---
 

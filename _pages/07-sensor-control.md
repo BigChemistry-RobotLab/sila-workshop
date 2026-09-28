@@ -2,7 +2,7 @@
 layout: default
 title: 7. BME280 Sensor Control
 permalink: /workshop/sensor-control/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 7
 ---
 

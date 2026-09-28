@@ -2,7 +2,7 @@
 layout: default
 title: 5. Inspect the SiLA Connector
 permalink: /workshop/connect-to-sila-connector/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 5
 ---
 

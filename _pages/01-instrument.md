@@ -2,7 +2,7 @@
 layout: default
 title: 1. The Instrument
 permalink: /workshop/instrument/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 1
 ---
 

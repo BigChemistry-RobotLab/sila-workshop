@@ -2,7 +2,7 @@
 layout: default
 title: 2. Create SiLA Connector
 permalink: /workshop/create-sila-connector/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 2
 ---
 

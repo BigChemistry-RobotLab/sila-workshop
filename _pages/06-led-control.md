@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 6. LED Control Logic
+title: 6. LED Control
 permalink: /workshop/led-control/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 6
 ---
 

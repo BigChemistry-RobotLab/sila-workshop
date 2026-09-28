@@ -2,7 +2,7 @@
 layout: default
 title: 3. Connecting to the Raspberry Pi
 permalink: /workshop/connect-raspberry-pi/
-parent: Workshop
+parent: SiLA Raspberry Pi Workshop
 nav_order: 3
 ---
 
