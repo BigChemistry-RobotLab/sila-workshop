@@ -1,0 +1,5 @@
+Flask
+gpiozero
+bme280
+smbus2
+waitress
