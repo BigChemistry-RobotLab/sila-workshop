@@ -1,0 +1,14 @@
+[Unit]
+Description=Workshop server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=big
+WorkingDirectory=/home/big
+ExecStart=/usr/bin/python3 /home/big/server.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
