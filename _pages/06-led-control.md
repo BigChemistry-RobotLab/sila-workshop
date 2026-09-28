@@ -36,14 +36,14 @@ Add the required imports:
 Then add the `is_led_on` method to `RaspberrypiConnectorProtocol`:
 
 ```python
-    async def is_led_on(self) -> bool:
-        """Check whether the LED is currently switched on."""
-        command = HTTPCommand(path="/led")
-        response: HTTPResponse = await self.execute(command)
-        if not response.payload:
-            raise Exception
-        state = json.loads(response.payload)
-        return bool(state["state"])
+async def is_led_on(self) -> bool:
+    """Check whether the LED is currently switched on."""
+    command = HTTPCommand(path="/led")
+    response: HTTPResponse = await self.execute(command)
+    if not response.payload:
+        raise Exception
+    state = json.loads(response.payload)
+    return bool(state["state"])
 ```
 
 1. The method creates an HTTP request to the Raspberry Pi's `/led` endpoint. 
@@ -67,15 +67,15 @@ src/unitelabs/raspberrypi_connector/features/raspberry_controller/raspberry_cont
 Add the following property to `RaspberryPiController`:
 
 ```python
-    @sila.UnobservableProperty(name="Is LED on", identifier="IsLedOn")
-    async def is_led_on(self) -> bool:
-        """
-        Check if the LED is on or off.
+@sila.UnobservableProperty(name="Is LED on", identifier="IsLedOn")
+async def is_led_on(self) -> bool:
+    """
+    Check if the LED is on or off.
 
-        Returns:
-            True if the LED is on, false otherwise.
-        """
-        return await self._protocol.is_led_on()
+    Returns:
+        True if the LED is on, false otherwise.
+    """
+    return await self._protocol.is_led_on()
 ```
 
 The `@sila.UnobservableProperty` decorator tells the SiLA framework that this method should be exposed as a **SiLA property**, and adds metadata like a unique identifier and a human readable name.
@@ -111,17 +111,17 @@ Add a `set_led_state` method to `RaspberrypiConnectorProtocol`.
 The method will be responsible for creating and sending the HTTP request to the Raspberry Pi.
 
 ```python
-    async def set_led_state(self, led_on: bool) -> None:
-        """Turn led on of off."""
-        body = {"state": int(led_on)}
+async def set_led_state(self, led_on: bool) -> None:
+    """Turn led on of off."""
+    body = {"state": int(led_on)}
 
-        command = HTTPCommand(
-            path="/led",
-            method=_Method.POST,
-            message=json.dumps(body).encode("utf-8"),
-            headers={"Content-Type": "application/json"},
-        )
-        await self.execute(command)
+    command = HTTPCommand(
+        path="/led",
+        method=_Method.POST,
+        message=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+    )
+    await self.execute(command)
 ```
 
 ## 2. Expose a Command to Set the LED State
@@ -137,16 +137,16 @@ src/unitelabs/raspberrypi_connector/features/raspberry_controller/raspberry_cont
 Add the following property to `RaspberryPiController`:
 
 ```python
-    @sila.UnobservableCommand(name="Set LED state", identifier="SetLedState")
-    async def set_led_state(self, led_on: bool) -> None:
-        """
-        Set state of led.
+@sila.UnobservableCommand(name="Set LED state", identifier="SetLedState")
+async def set_led_state(self, led_on: bool) -> None:
+    """
+    Set state of led.
 
-        Args:
-            led_on: True to turn led on, false otherwise
-        """
+    Args:
+        led_on: True to turn led on, false otherwise
+    """
 
-        await self._protocol.set_led_state(led_on=led_on)
+    await self._protocol.set_led_state(led_on=led_on)
 ```
 
 ## 3. Test setting the LED state

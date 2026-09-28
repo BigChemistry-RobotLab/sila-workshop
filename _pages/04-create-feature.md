@@ -46,7 +46,7 @@ class RaspberryPiController(sila.Feature):
 
 The `RaspberryPiController` class inherits from `sila.Feature`. This makes it a SiLA feature that can be registered with the connector. The feature is initialized with several pieces of metadata that describe the organization or prject that created the feature, the category of feature, the version and the maturity level.
 
-The `RaspberrypiConnectorProtocol` is passed into the feature through the constructor. This is an example of [**dependency injection**](https://www.geeksforgeeks.org/system-design/dependency-injectiondi-design-pattern/). The feature does not create or configure the connection to the Raspberry Pi itself. Instead, the already-configured protocol is provided to it by another class.
+The `RaspberrypiConnectorProtocol` is passed into the feature through the constructor. This is an example of [dependency injection](https://www.geeksforgeeks.org/system-design/dependency-injectiondi-design-pattern/). The feature does not create or configure the connection to the Raspberry Pi itself. Instead, the already-configured protocol is provided to it by another class.
 
 ## 2. Register the Feature with the connector
 

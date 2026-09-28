@@ -24,9 +24,9 @@ Cruft will ask you several questions about the connector. For this workshop, use
 [9/9] Select your environment management tool: 1
 ```
 
-The important choice here is the **communication type**. Select option `5` because the Raspberry Pi exposes an **HTTP API** that the connector will communicate with.
+The important choice here is the communication type. Select option `5` because the Raspberry Pi exposes an HTTP API that the connector will communicate with.
 
-Select **UV** as the environment management tool (`1`). UV will create and manage the project's Python virtual environment and dependencies.
+Select UV as the environment management tool (`1`). UV will create and manage the project's Python virtual environment and dependencies.
 
 ## 2. Open the project in VS Code
 

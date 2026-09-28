@@ -55,18 +55,18 @@ class RaspberrypiConnectorProtocol(Protocol):
 
 Add the `get_sensor_data` function to the `RaspberrypiConnectorProtocol`:
 ```python
-    async def get_sensor_data(self) -> SensorData:
-        """Get data of sensor."""
-        command = HTTPCommand(path="/bme280")
-        response: HTTPResponse = await self.execute(command)
-        if not response.payload:
-            raise Exception
-        state = json.loads(response.payload)
-        return SensorData(
-            humidity=state["humidity"],
-            pressure=state["pressure"],
-            temperature=state["temperature"],
-        )
+async def get_sensor_data(self) -> SensorData:
+    """Get data of sensor."""
+    command = HTTPCommand(path="/bme280")
+    response: HTTPResponse = await self.execute(command)
+    if not response.payload:
+        raise Exception
+    state = json.loads(response.payload)
+    return SensorData(
+        humidity=state["humidity"],
+        pressure=state["pressure"],
+        temperature=state["temperature"],
+    )
 ```
 
 1. The method creates an HTTP request to the Raspberry Pi’s /bme280 endpoint.
@@ -92,52 +92,52 @@ Add the following observable properties to the `RaspberryPiController`:
 ### Temperature
 
 ```python
-    @sila.ObservableProperty(name="Temperature", identifier="Temperature")
-    async def get_temperature(self) -> sila.Stream[float]:
-        """
-        Read temperature.
+@sila.ObservableProperty(name="Temperature", identifier="Temperature")
+async def get_temperature(self) -> sila.Stream[float]:
+    """
+    Read temperature.
 
-        Returns:
-            Temperature: Environmental temperature in celcius.
-        """
-        while True:
-            data = await self._protocol.get_sensor_data()
-            yield data.temperature
-            await asyncio.sleep(1)
+    Returns:
+        Temperature: Environmental temperature in celcius.
+    """
+    while True:
+        data = await self._protocol.get_sensor_data()
+        yield data.temperature
+        await asyncio.sleep(1)
 ```
 
 ### Humidity
 
 ```python
-    @sila.ObservableProperty(name="Humidity", identifier="Humidity")
-    async def get_humidity(self) -> sila.Stream[float]:
-        """
-        Read humidity.
+@sila.ObservableProperty(name="Humidity", identifier="Humidity")
+async def get_humidity(self) -> sila.Stream[float]:
+    """
+    Read humidity.
 
-        Returns:
-            Humidity: Environmental humidity.
-        """
-        while True:
-            data = await self._protocol.get_sensor_data()
-            yield data.humidity
-            await asyncio.sleep(1)
+    Returns:
+        Humidity: Environmental humidity.
+    """
+    while True:
+        data = await self._protocol.get_sensor_data()
+        yield data.humidity
+        await asyncio.sleep(1)
 ```
 
 ### Pressure
 
 ```python
-    @sila.ObservableProperty(name="Pressure", identifier="Pressure")
-    async def get_pressure(self) -> sila.Stream[float]:
-        """
-        Read pressure.
+@sila.ObservableProperty(name="Pressure", identifier="Pressure")
+async def get_pressure(self) -> sila.Stream[float]:
+    """
+    Read pressure.
 
-        Returns:
-            Pressure: Environmental pressure.
-        """
-        while True:
-            data = await self._protocol.get_sensor_data()
-            yield data.pressure
-            await asyncio.sleep(1)
+    Returns:
+        Pressure: Environmental pressure.
+    """
+    while True:
+        data = await self._protocol.get_sensor_data()
+        yield data.pressure
+        await asyncio.sleep(1)
 ```
 
 ## 3. Test setting the LED state
