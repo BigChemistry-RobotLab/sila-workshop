@@ -145,7 +145,9 @@ Add the following observable properties to the `RaspberryPiController`:
 Restart the connector:
 ```bash
 ctrl+C
+```
 
+```bash
 uv run connector start --app unitelabs.raspberrypi_connector:create_app
 ```
 

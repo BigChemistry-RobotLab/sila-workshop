@@ -154,8 +154,11 @@ Add the following property to `RaspberryPiController`:
 Restart the connector:
 ```bash
 ctrl+C
+```
 
+```bash
 uv run connector start --app unitelabs.raspberrypi_connector:create_app
 ```
+
 
 The connector will now expose the `Is LED on` property through the `RaspberryPiController` feature.
