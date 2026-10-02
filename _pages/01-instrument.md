@@ -14,7 +14,9 @@ The device is a Raspberry Pi 4 connected to:
 * An LED with a 220 Ω resistor
 * A BME280 sensor for temperature, humidity, and pressure
 
-On the Raspoberry PI there is a server through which you can control the LED and get the sensor data. This server can be called through HTTP.
+On the Raspberry Pi there is a server through which you can control the LED and get the sensor data. This server can be called through an HTTP API.
+
+Make sure the Pi is connected to your computer through a USB-C cable.
 
 ## 1. Check the Raspberry Pi connection
 
