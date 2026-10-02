@@ -1,0 +1,193 @@
+<div
+  id="termynal"
+  data-termynal
+  class="termy"
+  data-ty-lineDelay="100"
+  data-ty-typeDelay="50"
+  title="Raspberrypi Connector"
+>
+  <span data-ty="input" data-ty-prompt="$">
+    cruft create https://gitlab.com/unitelabs/cdk/connector-factory.git
+  </span>
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[1/9]</span>
+    Select your connector name
+    <span class="terminal-green">(Awesome Instrument)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >Raspberrypi Connector</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[2/9]</span>
+    Select your project name, this is the top-level directory and the
+    python package name, which must be a hyphen-separated value.
+    <span class="terminal-green">(raspberrypi-connector)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >raspberrypi-connector</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[3/9]</span>
+    Select your package name, this is the internal module import name,
+    which must be a underscore-separated value.
+    <span class="terminal-green">(raspberrypi_connector)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >raspberrypi_connector</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[4/9]</span>
+    Short description
+    <span class="terminal-green">(A connector for the Raspberrypi Connector built with the UniteLabs CDK.)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >My Raspberry PI connector for the SiLA workshop with Big Chemistry.</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[5/9]</span>
+    Enter your full name
+    <span class="terminal-green">(UniteLabs)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >Big Chemistry</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[6/9]</span>
+    Enter your email address
+    <span class="terminal-green">(developers@unitelabs.io)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >example@email.io</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[7/9]</span>
+    Enter your repository url
+    <span class="terminal-green">(https://gitlab.com/unitelabs/connectors/raspberrypi-connector)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >https://gitlab.com/unitelabs/connectors/raspberrypi-connector</span>
+
+  <span data-ty class="newline"></span>
+
+
+  <span data-ty>
+    <span class="terminal-pink">[8/9]</span>
+    What type of communication does your device use?
+  </span>
+
+  <span data-ty>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">1</span> - No communication required
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">2</span> - Serial, RS-232, RS-485
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">3</span> - USB
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">4</span> - HID
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">5</span> - TCP / HTTP
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">6</span> - UDP
+  </span>
+
+  <span data-ty class="inline-input">
+    Choose from
+    <span class="terminal-pink">[1/2/3/4/5/6]</span>
+    <span class="terminal-green">(1)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >5</span>
+
+  <span data-ty class="newline"></span>
+
+  <span data-ty class="inline-input">
+    <span class="terminal-pink">[9/9]</span>
+    Select your environment management tool, which will also be used
+    for CI/CD.
+  </span>
+
+  <span data-ty>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">1</span> - uv
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">2</span> - hatch
+    <br>
+    &nbsp;&nbsp;&nbsp;<span class="terminal-pink">3</span> - poetry
+  </span>
+
+  <span data-ty class="inline-input">
+    Choose from
+    <span class="terminal-pink">[1/2/3]</span>
+    <span class="terminal-green">(1)</span>:
+  </span>
+
+  <span
+    class="inline-input"
+    data-ty="input"
+    data-ty-delay="500"
+    data-ty-prompt=""
+  >1</span>
+
+  <span data-ty class="newline"></span>
+
+</div>
+<script>
+  new Termynal('#termynal');
+</script>
