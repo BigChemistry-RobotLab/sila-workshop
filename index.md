@@ -29,4 +29,3 @@ Before starting, make sure you have the following installed:
 
  * [Python](https://www.python.org/) 3.10 or newer
  * [UV](https://docs.astral.sh/uv/)
- * [Cruft](https://cruft.github.io/cruft/) (does not need to be installed as it can be executed directly with `uvx`)
