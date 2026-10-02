@@ -46,4 +46,6 @@ You should also see the feature that we created in the previous step:
 RaspberryPiController
 ```
 
-At the moment, this feature does not expose any custom commands. This is expected. In the previous step, we created and registered the feature, but we have not yet defined any SiLA commands or properties for it.
+{: .highlight }
+> At the moment, this feature does not expose any custom commands or properties. This is expected. 
+> In the previous step, we created and registered the feature, but we have not yet defined any SiLA commands or properties for it.

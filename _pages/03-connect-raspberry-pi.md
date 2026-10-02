@@ -126,7 +126,8 @@ You should see these values:
 }
 ```
 
-If the Raspberry Pi is running at a different address or port, update these values in `config.json`.
+{: .note }
+> If the Raspberry Pi is running at a different address or port, update these values in `config.json`.
 
 ## 4. Start the connector
 

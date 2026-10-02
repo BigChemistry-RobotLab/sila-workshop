@@ -14,6 +14,9 @@ Open a terminal in the directory where you want to create the connector and do:
 
 {% include termynal.html %}
 
+{: .note }
+> The most important choice here is the communication type. The Raspberry Pi exposes an HTTP API, therefore the `5 - TCP / HTTP` option is selected.
+
 ## 2. Open the project in VS Code
 
 Once Cruft has finished generating the project, change into the new project directory and open it in VS Code:
