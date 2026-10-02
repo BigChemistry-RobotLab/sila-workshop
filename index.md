@@ -31,5 +31,6 @@ Before starting, make sure you have the following installed:
  * [Git](https://git-scm.com/)
  * [UV](https://docs.astral.sh/uv/)
  * [Cruft](https://cruft.github.io/cruft/)
-
+ 
+{: .highlight }
 > If you are using UV, Cruft can also be executed directly with `uvx`, so a separate Cruft installation is not required.
