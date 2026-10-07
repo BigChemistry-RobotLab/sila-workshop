@@ -24,6 +24,18 @@ For this project thsese supplies are required.
 5. 220 Ω resistor
 6. 6 male to female jumper wires
 
+## Installation
+
+Clone the repo
+```bash
+git clone https://github.com/BigChemistry-RobotLab/sila-workshop.git
+```
+
+Move into project directory
+```bash
+cd sila-workshop
+```
+
 ## Getting started
 
 Open the workshop homepage in your browser and follow the steps in the lesson pages.
