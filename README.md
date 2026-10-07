@@ -38,8 +38,6 @@ cd sila-workshop
 
 ## Getting started
 
-Open the workshop homepage in your browser and follow the steps in the lesson pages.
-
 To preview the site locally, run:
 
 ```bash
