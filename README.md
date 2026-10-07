@@ -15,6 +15,8 @@ The example setup combines a Raspberry Pi running a small HTTP API with a Python
 
 ## Requirements
 
+### Hardware
+
 For this project thsese supplies are required.
 
 1. USB A to C cable
@@ -23,6 +25,10 @@ For this project thsese supplies are required.
 4. BME280 sensor
 5. 220 Ω resistor
 6. 6 male to female jumper wires
+
+### Software
+
+And a running Docker Installation (e.g. [Docker Desktop](https://www.docker.com/products/docker-desktop/))
 
 ## Installation
 
