@@ -23,7 +23,6 @@ src/unitelabs/raspberrypi_connector/io/raspberrypi_connector_protocol.py
 Add the required imports:
 
 ```diff
-+from unitelabs.bus import HTTPCommand
 +import json
 
 -from unitelabs.bus import Protocol, create_tcp_connection

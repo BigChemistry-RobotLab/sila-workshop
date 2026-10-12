@@ -30,6 +30,12 @@ Select:
 raspberrypi-connector
 ```
 
+### SiLA Discovery Browser
+
+If the SiLA server is not present, try adding the raspberrypi-connector via the IP and port name.
+
+![Manually add server](/assets/images/sila_discoverybrowser_add.png)
+
 ## 3. Inspect the available Features
 
 After selecting `raspberrypi-connector`, SiLA Browser displays the features exposed by the connector.
