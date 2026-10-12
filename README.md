@@ -15,6 +15,8 @@ The example setup combines a Raspberry Pi running a small HTTP API with a Python
 
 ## Requirements
 
+### Hardware
+
 For this project thsese supplies are required.
 
 1. USB A to C cable
@@ -24,9 +26,23 @@ For this project thsese supplies are required.
 5. 220 Ω resistor
 6. 6 male to female jumper wires
 
-## Getting started
+### Software
 
-Open the workshop homepage in your browser and follow the steps in the lesson pages.
+And a running Docker Installation (e.g. [Docker Desktop](https://www.docker.com/products/docker-desktop/))
+
+## Installation
+
+Clone the repo
+```bash
+git clone https://github.com/BigChemistry-RobotLab/sila-workshop.git
+```
+
+Move into project directory
+```bash
+cd sila-workshop
+```
+
+## Getting started
 
 To preview the site locally, run:
 

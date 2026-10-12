@@ -12,6 +12,10 @@ A **SiLA Feature** defines the functionality that the connector exposes to SiLA 
 
 ![sila-connector-architecture](/assets/images/sila_connector_arch.png)
 
+{: .note }
+> This diagram shows multiple feature implementations because a single SiLA connector can register multiple features.
+> The user determines how commands and properties are divided between these features. However, it is recommended to organize features according to the instrument’s functionality. For example, one feature for measurement and another for sample transport.
+
 ## 1. Create the Feature Implementation
 
 Create the following file:
