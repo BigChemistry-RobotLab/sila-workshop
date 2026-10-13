@@ -21,4 +21,4 @@ Throughout this workshop, you worked through the full flow of instrument integra
 
 This pattern can be applied to any instrument in a self driving lab that exposes a supported API. And a standardized software layer makes it usable in a cleaner, more interoperable way.
 
-Back to the [home page](/).
+Back to the [home page](/sila-workshop/).
