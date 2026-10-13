@@ -1,5 +1,6 @@
 title: "SiLA Workshop"
-baseurl: ""
+url: "https://bigchemistry-robotlab.github.io"
+baseurl: "/sila-workshop"
 host: 0.0.0.0
 port: 4000
 

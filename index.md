@@ -5,8 +5,8 @@ permalink: /
 nav_order: 0
 ---
 
-![SiLA logo](/assets/images/sila_logo.png){: style="height:100px"}
-![Big Chemistry logo](/assets/images/logo.svg){: style="height:100px; float: right"}
+![SiLA logo]({{ '/assets/images/sila_logo.png' | relative_url }}){: style="height:100px"}
+![Big Chemistry logo]({{ '/assets/images/logo.svg ' | relative_url }}){: style="height:100px; float: right"}
 
 # SiLA Raspberry Pi Workshop
 
