@@ -7,8 +7,9 @@ Wants=network-online.target
 Type=simple
 User=big
 WorkingDirectory=/home/big
-ExecStart=/usr/bin/python3 /home/big/server.py
+ExecStart=/home/big/venv/bin/python /home/big/server.py
 Restart=on-failure
+RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
