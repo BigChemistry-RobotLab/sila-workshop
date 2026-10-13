@@ -26,6 +26,14 @@ First, check that the Raspberry Pi is reachable from your computer:
 ping raspberrypi.local
 ```
 
+If this does not work try using the IP Address: 
+
+```bash
+ping 10.12.194.1
+```
+If `raspberrypi.local` does not work, but the IP address (`10.12.194.1`) works, substitute `raspberrypi.local` for `10.12.194.1` in all subsequent commands.
+
+
 ## 2. Call the server
 
 The Raspberry Pi runs an HTTP server on port `5000`.
@@ -49,7 +57,7 @@ Response (0=off, 1=on):
 **Turn the LED on:**
 
 ```bash
-curl -X POST http://raspberrypi.local:5000/led -H "Content-Type: application/kson" -d "{\"state\":1}"
+curl -X POST http://raspberrypi.local:5000/led -H "Content-Type: application/json" -d "{\"state\":1}"
 ```
 
 **Turn the LED off:**
