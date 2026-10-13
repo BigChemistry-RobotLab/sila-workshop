@@ -8,7 +8,7 @@ nav_order: 1
 
 # Raspberry PI Instrument
 
-![Wiring Diagram](/assets/images/circuit_image.png)
+![Wiring Diagram]({{ '/assets/images/circuit_image.png' | relative_url }})
 
 The device is a Raspberry Pi 4 connected to:
 * An LED with a 220 Ω resistor

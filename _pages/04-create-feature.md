@@ -10,7 +10,7 @@ nav_order: 4
 
 A **SiLA Feature** defines the functionality that the connector exposes to SiLA clients. The feature acts as the public API of the connector, while the Raspberry Pi protocol is responsible for communicating with the physical device through the built-in omnibus.
 
-![sila-connector-architecture](/assets/images/sila_connector_arch.png)
+![sila-connector-architecture]({{ '/assets/images/sila_connector_arch.png' | relative_url }})
 
 {: .note }
 > This diagram shows multiple feature implementations because a single SiLA connector can register multiple features.

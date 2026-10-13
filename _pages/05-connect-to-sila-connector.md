@@ -22,7 +22,7 @@ Open SiLA Browser.
 
 The connector should appear in the list of available SiLA servers.
 
-![available SiLA Browsers](/assets/images/sila_browser_home.png)
+![available SiLA Browsers]({{ '/assets/images/sila_browser_home.png' | relative_url }})
 
 Select:
 
@@ -34,7 +34,7 @@ raspberrypi-connector
 
 If the SiLA server is not present, try adding the raspberrypi-connector via the IP and port name.
 
-![Manually add server](/assets/images/sila_discoverybrowser_add.png)
+![Manually add server]({{ '/assets/images/sila_discoverybrowser_add.png' | relative_url }})
 
 ## 3. Inspect the available Features
 
