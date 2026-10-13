@@ -39,6 +39,7 @@ async def avg_temp(self) -> float:
 
 ### Add a blinking pattern command for the LED
 
+Requirements:
 - Add a `blinks` argument and use its value to determine the number of blink cycles.
 - Add a `MinimalInclusive` constraint to require `blinks > 0` ([constraints](https://docs.unitelabs.io/connector-development/tutorial/data-types/#constraints)).
 - Add a `MaximalInclusive` constraint to require `blinks <= 10` ([constraints](https://docs.unitelabs.io/connector-development/tutorial/data-types/#constraints)).
