@@ -20,6 +20,11 @@ Make sure the Pi is connected to your computer through a USB-C cable.
 
 ## 1. Check the Raspberry Pi connection
 
+{: .note }
+> Windows users need to install a special driver from the Raspberry Pi Github page to enable their computer to connect to the Raspberry Pi. 
+> You can download the driver from [here](https://github.com/raspberrypi/rpi-usb-gadget/releases/download/v1.0.6/rpi-usb-gadget-driver-setup.exe). 
+> Run the installer and follow the instructions.
+
 First, check that the Raspberry Pi is reachable from your computer:
 
 ```bash
