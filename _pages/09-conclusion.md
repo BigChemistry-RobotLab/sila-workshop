@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 8. Conclusion
+title: 9. Conclusion
 permalink: /workshop/conclusion/
 parent: SiLA Raspberry Pi Workshop
 nav_order: 9
