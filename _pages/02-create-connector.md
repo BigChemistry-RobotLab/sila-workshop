@@ -62,10 +62,10 @@ The most important directories are:
 
 **Windows**
 ```bash
-.venv/Scripts/Activate
+.venv\Script\Activate
 ```
 
-**Linux**
+**Linux/Mac**
 ```bash
 source .venv/bin/activate
 ```
