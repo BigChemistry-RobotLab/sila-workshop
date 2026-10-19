@@ -16,7 +16,7 @@ The device is a Raspberry Pi 4 connected to:
 
 On the Raspberry Pi there is a server through which you can control the LED and get the sensor data. This server can be called through an HTTP API.
 
-Make sure the Pi is connected to your computer through a USB-C cable, where the USB-C end is plugged into the Pi.
+Make sure that the Pi is wired up correctly before connecting it to your computer with the USB-C cable, where the USB-C end is plugged into the Pi.
 
 ## 1. Check the Raspberry Pi connection
 
