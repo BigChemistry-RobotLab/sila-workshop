@@ -53,7 +53,7 @@ docker compose up -d
 Then open:
 
 ```text
-http://127.0.0.1:4000/sila-workshop
+http://127.0.0.1:4000/sila-workshop/
 ```
 
 To refresh the site, run:
