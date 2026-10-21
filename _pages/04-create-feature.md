@@ -29,7 +29,7 @@ Add the following code:
 ```python
 from unitelabs.cdk import sila
 
-from unitelabs.raspberrypi_connector.io.raspberrypi_connector_protocol import (
+from unitelabs.raspberrypi_connector.io.protocol import (
     RaspberrypiConnectorProtocol,
 )
 
@@ -72,7 +72,7 @@ from importlib.metadata import version
 from unitelabs.cdk import Connector, ConnectorBaseConfig, SiLAServerConfig
 
 +from .features.raspberry_controller.raspberry_controller import RaspberryPiController
-from .io.raspberrypi_connector_protocol import RaspberrypiConnectorProtocol
+from .io.protocol import RaspberrypiConnectorProtocol
 
 ...
 ```
