@@ -17,7 +17,7 @@ The Raspberry Pi exposes an HTTP API. Instead of hard-coding the Raspberry Pi's 
 Open:
 
 ```text
-src/unitelabs/raspberrypi_connector/io/raspberrypi_connector_protocol.py
+src/unitelabs/raspberrypi_connector/io/protocol.py
 ```
 
 The generated protocol currently contains a hard-coded host and port:

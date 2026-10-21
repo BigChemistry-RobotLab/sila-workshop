@@ -17,7 +17,7 @@ First, we need a method in the protocol that can retrieve the sensor data and re
 Open:
 
 ```text
-src/unitelabs/raspberrypi_connector/io/raspberrypi_connector_protocol.py
+src/unitelabs/raspberrypi_connector/io/protocol.py
 ```
 
 

@@ -17,7 +17,7 @@ First, we need a method in the protocol that can determine whether the LED is cu
 Open:
 
 ```text
-src/unitelabs/raspberrypi_connector/io/raspberrypi_connector_protocol.py
+src/unitelabs/raspberrypi_connector/io/protocol.py
 ```
 
 Add the required imports:
@@ -102,7 +102,7 @@ The Raspberry Pi API provides an endpoint that can be used to change the LED sta
 Open:
 
 ```text
-src/unitelabs/raspberrypi_connector/io/raspberrypi_connector_protocol.py
+src/unitelabs/raspberrypi_connector/io/protocol.py
 ```
 
 Add a `set_led_state` method to `RaspberrypiConnectorProtocol`.
