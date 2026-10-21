@@ -43,9 +43,8 @@ The SiLA connector framework will use these values when establishing the connect
 ## 2. Add the Raspberry Pi connection settings to the connector configuration
 
 Open:
-
 ```text
-src/unitelabs/raspberrypi_connector/__init__.py
+src/unitelabs/raspberrypi_connector/config.py
 ```
 
 The connector configuration is defined by the `RaspberrypiConnectorConfig` dataclass.
@@ -79,6 +78,18 @@ class RaspberrypiConnectorConfig(ConnectorBaseConfig):
         )
     )
 
+```
+
+Open:
+
+```text
+src/unitelabs/raspberrypi_connector/__init__.py
+```
+
+Pass the host and port into the protocol class.
+
+```diff
+...
 
 async def create_app(
     config: RaspberrypiConnectorConfig,
